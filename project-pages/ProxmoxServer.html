@@ -1,0 +1,170 @@
+!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/me.png" />
+     <title>My Portfolio</title>
+    <meta name="description" content="A portfolio.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Dennis-Grellmann</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:djgrellmann@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Proxmox Server!</div>
+        <div class="body-text">Documenting my process of exploring homelabs and proxmox servers.</div>
+        <image class="project-header-image" src="../assets/images/Screenshot 2023-05-04 at 2.59.28 pm.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Overview</div>
+        <div class="date-text">6/5/2023-ongoing</div>
+        <div class="todo-text">ToDo: keep documenting, format text properly</div>
+        <div class="project-details-content">
+          <div class="body-text">I was browsing reddit and a few weeks ago I discovered <a href="https://www.reddit.com/r/homelab/">r/homelab</a> and found it extremely interesting. I began following the community and reading up on as much as I could. After a week or so of researching and understanding how and what I would need to make my own, I began asking around and managed to get a computer off one of my good friends. It is extremely overkill for my use case of learning and messing around but it also gives me a lot of headroom. I ordered some parts that I needed and built the computer over the weekend. After dealing with some ram issues I managed to get the setup process for Proxmox running. I went through the process and assigned it a static IP address from my network so I wouldn't have any issues later. I logged in to the web GUI and began exploring the different menus and settings until I was confident enough to start setting up my own virtual machines. My first first virtual machine set up was ubuntu server to run my docker containers. I decided to go with a VM instead of a LXC so later down the line if I decided to open it up to the internet I would have more security and flexibilty. The VNC was a awesome feature and allowed me to run the ubuntu server setup quickly and flawlessly. This is where I'm up to at this time of writing, 7/5/2023. More to come...</div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+          
+           
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/IMG_2095.jpg" class="gallery-image">
+              <span class="image-caption">modifying a spare case to fit GPU.</span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/IMG_2098.jpg" class="gallery-image">
+              <span class="image-caption">New parts!</span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/IMG_2100.jpg" class="gallery-image">
+              <span class="image-caption">Finished server pc build.</span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/VNC.jpg" class="gallery-image">
+              <span class="image-caption">VNC into the ubuntu server setup.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://instagram.com/dennis.grellmann">
+        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:djgrellmann@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
